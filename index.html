@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61302010-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61302010-2');
+    </script>
+
+    <title>Adam Harley - Academic Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'> -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+      hr {border-top: 1px solid #ccc}
+      .card {border: 1px solid #ccc}
+      img { display:block; margin-bottom:0px;}
+      a {text-decoration: none; color: #2196F3;} 
+      .btn {margin-bottom:4px}
+      .bkg {
+      /* background-image: url("images/gates_night2.jpg"); */
+      /* box-shadow: inset 0 0 100px hsla(0,0%,0%,1.0); */
+      background-size: 100%, auto;
+      background-position: 0 50%;
+      background-color: #fff;
+      }
+      .bkg2 {
+      background-color: #000;
+      }
+      .w3-row-padding{ padding: 0 20px;}
+      .margin-top{ margin-top: 50px;}
+      .margin-bottom{ margin-bottom: 50px;}
+      .head { height:250px;}
+      .container {padding: 0; }
+      .papercontainer {
+	  min-height: 10em;
+	  display: table-cell;
+	  vertical-align: middle
+      }
+      .paper {; }
+      .padright {padding-right:1em; }
+      .padimg { padding-bottom:1em; padding-top: 1em; width: 100%}
+      .nopadimg { width: 100%}
+      .icon {
+	  float: left;
+	  width: 40px;
+	  height: 40px;
+	  margin-right: 5px;
+      }
+      .email {
+	  /* margin-top: 10px; */
+	  padding-top: 10px;
+	  /* color: #555; */
+	  float: right;
+	  height: 0;
+	  opacity: 0;
+	  transition: opacity 0.7s;
+      }
+      .papertable {
+	  width:100%;
+	  border:0px;
+	  border-spacing:0px;
+	  border-collapse:separate;
+	  margin-right:auto;
+	  margin-left:auto;
+	  margin-bottom:2em;
+      }
+      .paperimage {
+	  padding-right:2.5%;
+	  width:30%;
+	  max-width:20%;
+      }
+      .papertext {
+	  width:80%;
+	  vertical-align:middle;
+      }
+    </style>
+      
+    </style>
+  </head>  
+  <body class="w3-white w3-margin-bottom" style="padding: 0; margins: 0;">
+
+    <!-- header -->
+    <div class="bkg w3-content" style="max-width:100%; margin-top:2em;">
+      <div class="w3-row-padding w3-content" style="max-width:960px;">
+
+	<div class="w3-row w3-white">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+	    <tr style="padding:0px">
+	      <td style="padding-right:2.5%;width:70%;vertical-align:middle">
+		<h1>Adam Harley</h1>
+		<p>I am joining Prof. Leonidas Guibas' lab at Stanford University, as a postdoc. </p>
+		<p>I recently completed my Ph.D. at Carnegie Mellon University, in The Robotics Institute. I worked with <a href="https://www.cs.cmu.edu/~katef/">Dr. Katerina Fragkiadaki</a>, on machine learning and computer vision. Before this, I did a Master of Science in computer science, with <a href="https://www.scs.ryerson.ca/~kosta/">Dr. Kosta Derpanis</a>. Even earlier, I did a Bachelor of Arts in psychology.</p>
+		<p>I recently co-organized <a href="http://www.generativeperception.com">Perception Through Structured Generative Models</a> at ECCV 2020, and <a href="https://www.youtube.com/watch?v=WRokde4btqU&list=PLw-QBnA20Z6_Db2I3bJNpnkaThFJnELWB">Minds vs. Machines: How far are we from the common sense of a toddler?</a> at CVPR 2020.</p>
+		<div>
+		  <a class="w3-button btn w3-white w3-text-blue w3-border" href="aharley_cv_latest.pdf">CV</a>
+		  <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://scholar.google.com/citations?hl=en&user=OB6vAtkAAAAJ">Google Scholar</a> 
+		  <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://twitter.com/AdamWHarley">Twitter</a>
+		  <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley">Github</a>
+		  <a class="w3-button btn w3-white w3-text-blue w3-border" style="cursor: pointer" id="email" title="click to reveal">Email</a>
+		  <span id="email_div" class="email">(hidden)</span> <!-- will reveal email; trick from karpathy's page -->
+		</div>
+	      </td>
+	      <td style="padding-left:2.5%;width:40%;max-width:30%">
+		<img style="width:100%;max-width:100%;border-radius:50%" alt="profile photo" src="images/face_gates2.jpg">
+	      </td>
+	    </tr>
+	  </table>
+	  
+      </div>
+    </div>
+
+    <!-- <div class="w3-row w3-white w3-border w3-content" style="max-width:100%;"> -->
+    <!--   <div class="w3-row-padding w3-content w3-margin-top w3-margin-bottom" style="max-width:960px;"> -->
+    <!-- 	<div class="container w3-text-black w3-large"> -->
+    <!-- 	  <h3>Recent news:</h3> -->
+    <!-- 	  <ul> -->
+    <!-- 	    <li>Two papers accepted to CVPR 2021!</li> -->
+    <!-- 	    <li>One paper accepted to ICLR 2021!</li> -->
+    <!-- 	    <li>I co-organized <a href="http://generativeperception.com/">Perception Through Structured Generative Models</a> at ECCV 2020.</li> -->
+    <!-- 	    <li>I co-organized <a href="http://mindsvsmachines.com/">Minds vs. Machines: How far are we from the common sense of a toddler?</a> at CVPR 2020. Videos of all the talks are now on <a href="https://www.youtube.com/watch?v=55WaJkqifIg&list=PLw-QBnA20Z6_Db2I3bJNpnkaThFJnELWB&index=2">Youtube</a>.</li> -->
+    <!-- 	    <li>I won a "Best Reviewer" award at ICCV 2019.</a> -->
+    <!-- 	    <li>I was awarded an NSERC Postgraduate Scholarship.</a> -->
+    <!-- 	  </ul> -->
+    <!-- 	</div> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:960px;">
+
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+	<div class="container w3-text-black w3-large">
+	  <h3>Publications:</h3>
+	</div>
+	
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="particles/images/horse_square.gif" class="nopadimg">
+	    </td>
+	    <td class="papertext"> 
+	      <h5>Particle Videos Revisited: Tracking Through Occlusions Using Point Trajectories</h5>
+	      <p>arXiv 2022</p>
+	      <p><strong>Adam W. Harley</strong>, <a href="https://zfang399.github.io/">Zhaoyuan Fang</a>, <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="http://www.cs.cmu.edu/~aharley/particles/">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2204.04153">paper</a>
+	      <!-- <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley/particles">code</a> -->
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/em_loop.gif" class="nopadimg">
+	    </td>
+	    <td class="papertext"> 
+	      <h5>Track, Check, Repeat: An EM Approach to Unsupervised Tracking</h5>
+	      <p>CVPR 2021</p>
+	      <p><strong>Adam W. Harley</strong>, <a href="https://zuoym15.github.io/">Yiming Zuo</a>, <a href="https://wenj.github.io/">Jing Wen</a>, Ayush Mangal, Shubhankar Potdar, Ritwick Chaudhry, <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="http://www.cs.cmu.edu/~aharley/em_cvpr21/">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="http://www.cs.cmu.edu/~aharley/em_cvpr21.pdf">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley/track_check_repeat">code</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/coco_arch.png" class="nopadimg">
+	    </td>
+	    <td class="papertext"> 
+	      <h5>CoCoNets: Continuous Contrastive 3D Scene Representations</h5>
+	      <p>CVPR 2021</p>
+	      <p><a href="https://shamitlal.github.io/">Shamit Lal</a>, <a href="https://mihirp1998.github.io/">Mihir Prabhudesai</a>, <a href="https://ishitamed19.github.io/">Ishita Mediratta</a>, <strong>Adam W. Harley</strong>, <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://mihirp1998.github.io/project_pages/coconets/">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="http://www.cs.cmu.edu/~aharley/coco_cvpr21.pdf">paper</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/move_loop.gif" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Move to See Better: Self-Improving Embodied Object Detection</h5>
+	      <p>BMVC 2021</p>
+	      <p><a href="https://zfang399.github.io/">Zhaoyuan Fang</a>, <a href="https://ayushjain1144.github.io/">Ayush Jain</a>, <a href="https://www.gabesar.ch/">Gabriel Sarch</a>, <strong>Adam W. Harley</strong>, <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>	      
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://ayushjain1144.github.io/SeeingByMoving/">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2012.00057">paper</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/disen_loop.gif" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Disentangling 3D Prototypical Networks For Few-Shot Concept Learning</h5>
+	      <p>ICLR 2021</p>
+	      <p><a href="https://mihirp1998.github.io/">Mihir Prabhudesai</a>, <a href="https://shamitlal.github.io/">Shamit Lal</a>, Darshan Patil, <a href="https://sfish0101.bitbucket.io/">Hsiao-Yu Fish Tung</a>, <strong>Adam W. Harley</strong>, <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://mihirp1998.github.io/project_pages/d3dp/">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://openreview.net/forum?id=-Lr-u0b42he">paper</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+	
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/trackingemerges.gif" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Tracking Emerges by Looking Around Static Scenes, with Neural 3D Mapping</h5>
+	      <p>ECCV 2020</p>
+	      <p><strong>Adam W. Harley</strong>, Shrinidhi KL, Paul Schydlo, <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2008.01295">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://www.rsipvision.com/ECCV2020-Monday/12/">ECCV Daily interview</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+	
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/3dq_loop.gif" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>3D Object Recognition By Corresponding and Quantizing Neural 3D Scene Representations</h5>
+	      <p>CVPR workshops 2020</p>
+	      <p><a href="https://mihirp1998.github.io/">Mihir Prabhudesai</a>, <a href="https://shamitlal.github.io/">Shamit Lal</a>, <a href="https://sfish0101.bitbucket.io/">Hsiao-Yu Fish Tung</a>, <strong>Adam W. Harley</strong>, <a href="http://smpotdar.com/">Shubhankar Potdar</a>, <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://mihirp1998.github.io/project_pages/3dq/">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2010.16279">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w26/Prabhudesai_3DQ-Nets_Visual_Concepts_Emerge_in_Pose_Equivariant_3D_Quantized_Neural_CVPRW_2020_paper.pdf">workshop paper</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+	
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/emblang_panel.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Embodied Language Grounding With 3D Visual Feature Representations</h5>
+	      <p>CVPR 2020</p>
+	      <p><a href="https://mihirp1998.github.io/">Mihir Prabhudesai</a>, <a href="https://sfish0101.bitbucket.io/">Hsiao-Yu Fish Tung</a>, Syed Ashar Javed, Maximilian Sieb, <strong>Adam W. Harley</strong>, <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://mihirp1998.github.io/project_pages/emblang">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1910.01210">paper</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="viewcontrast/images/feats.gif" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Learning from Unlabelled Videos Using Contrastive Predictive Neural 3D Mapping</h5>
+	      <p>ICLR 2020</p>
+	      <p><strong>Adam W. Harley</strong>, <a href="https://www.ri.cmu.edu/ri-people/fangyu-li/">Fangyu Li</a>, Shrinidhi K. Lakshmikanth, Xian Zhou, <a href="https://sfish0101.bitbucket.io/">Hsiao-Yu Fish Tung</a>, <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="viewcontrast">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1906.03764">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="viewcontrast/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/sigg2.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>VR Facial Animation via Multiview Image Translation</h5>
+	      <p>SIGGRAPH 2019</p>
+	      <p>Shih-En Wei, Jason Saragih, Tomas Simon, <strong>Adam W. Harley</strong>, Stephen Lombardi, Michal Perdoch, Alexander Hypes, Dawei Wang, Hernan Badino, Yaser Sheikh</p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://research.fb.com/publications/vr-facial-animation-via-multiview-image-translation/">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://research.fb.com/wp-content/uploads/2019/06/VR-Facial-Animation-via-Multiview-Image-Translation.pdf">paper</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/uncoop.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Image Disentanglement and Uncooperative Re-Entanglement for High-Fidelity Image-to-Image Translation</h5>
+	      <p>ICCV 2019 AIM workshop (Advances in Image Manipulation)</p>
+	      <p><strong>Adam W. Harley</strong>, Shih-En Wei, Jason Saragih, and <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1901.03628">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="uncoop/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+	
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/narr.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Reward Learning from Narrated Demonstrations</h5>
+	      <p>CVPR 2018</p>
+	      <p><a href="https://sfish0101.bitbucket.io/">Hsiao-Yu Fish Tung</a>, <strong>Adam W. Harley</strong>, Liang-Kang Huang, and <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1804.10692">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="narr/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+	
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/cow.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Adversarial Inverse Graphics Networks: Learning 2D-to-3D Lifting and Image-to-Image Translation from Unpaired Supervision</h5>
+	      <p>ICCV 2017</p>
+	      <p><a href="https://sfish0101.bitbucket.io/">Hsiao-Yu Fish Tung</a>, <strong>Adam W. Harley</strong>, William Seto, and <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1705.11166">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="aign/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+	
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/bike.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Segmentation-Aware Convolutional Networks Using Local Attention Masks</h5>
+	      <p>ICCV 2017</p>
+	      <p><strong>Adam W. Harley</strong>, <a href="http://scs.ryerson.ca/~kosta/">Konstantinos G. Derpanis</a>, and <a href="http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/">Iasonas Kokkinos</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="segaware">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1708.04607">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley/segaware">github</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="segaware/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+	
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/unsupervised_flow.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Back to Basics: Unsupervised Learning of Optical Flow via Brightness Constancy and Motion Smoothness</h5>
+	      <p>ECCV Workshops 2016</p>
+	      <p><a href="http://scs.ryerson.ca/~jjyu/">Jason J. Yu</a>, <strong>Adam W. Harley</strong>, and <a href="http://scs.ryerson.ca/~kosta/">Konstantinos G. Derpanis</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="http://scs.ryerson.ca/~jjyu/projects/unsupervised/optical/flow/machine/learning/2016/08/29/Unsup-flow.html">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1608.05842">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="unsupflow/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/boats.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Segmentation-Aware Convolutional Nets</h5>
+	      <p>Master's Thesis</p>
+	      <p><strong>Adam W. Harley</strong> (Advised by Konstantinos G. Derpanis)</p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="msc">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="msc/harley_msc_thesis.pdf">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="msc/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/cats.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Learning Dense Convolutional Embeddings for Semantic Segmentation</h5>
+	      <p>ICLR 2016 (Workshop)</p>
+	      <p><strong>Adam W. Harley</strong>, <a href="http://scs.ryerson.ca/~kosta/">Konstantinos G. Derpanis</a>, and <a href="http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/">Iasonas Kokkinos</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="iclr16">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1511.04377">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="iclr16/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/map10.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>Evaluation of Deep Convolutional Nets for Document Image Classification and Retrieval</h5>
+	      <p>ICDAR 2015 (Best Student Paper Award)</p>
+	      <p><strong>Adam W. Harley</strong>, Alex Ufkes, and <a href="http://scs.ryerson.ca/~kosta/">Konstantinos G. Derpanis</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="icdar15">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1502.07058">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="icdar15/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+	
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/rvl-cdip.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>RVL-CDIP dataset</h5>
+	      <p><strong>Adam W. Harley</strong>, Alex Ufkes, and <a href="http://scs.ryerson.ca/~kosta/">Konstantinos G. Derpanis</a></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="rvl-cdip">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="icdar15/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+	
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <!-- <img src="images/vis_preview4.png" class="nopadimg"> -->
+	      <img src="images/vis10.gif" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>An Interactive Node-Link Visualization of Convolutional Neural Networks</h5>
+	      <p>ISVC 2015</p>
+	      <p><strong>Adam W. Harley</strong></p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="vis">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="vis/harley_vis_isvc15.pdf">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="vis/bib.txt">bibtex</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+	
+	<!-- paper table -->
+        <table class="papertable"> 
+	  <tr style="padding:0px">
+	    <td class="paperimage"> 
+	      <img src="images/stimuli.png" class="nopadimg">
+	    </td>
+	    <td class="papertext">
+	      <h5>The Effect of Cognitive Switching on Sustained Attention</h5>
+	      <p>Undergraduate Thesis</p>
+	      <p><strong>Adam W. Harley</strong> (Advised by Benjamin Dyson)</p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="misc/HARLEYthesis2012.pdf">paper</a>
+	    </td>
+	  </tr>
+	</table>
+	<!-- end paper table -->
+
+	<hr>
+      </div>
+    </div>
+
+  </body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61302010-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <!-- attempt hiding from spambots; got from karpathy -->
+  <script type="text/javascript">
+    var e_is_shown = false;
+    console.log(e_is_shown)
+    document.getElementById('email').addEventListener("click", function(){
+	let demail = document.getElementById('email_div');
+	demail.innerHTML = 'aharley' + ' _at_ ' + 'cmu' + '.edu';
+	demail.style.opacity = e_is_shown ? 0 : 1;
+	e_is_shown = !e_is_shown;
+    })
+    console.log(e_is_shown)
+  </script>
+</html>
