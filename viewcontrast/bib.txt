@@ -1,0 +1,6 @@
+@inproceedings{harley_viewcontrast,
+  author    = {Adam W. Harley and Fangyu Li and Shrinidhi K. Lakshmikanth and Xian Zhou and Hsiao-Yu Fish Tung and Katerina Fragkiadaki},
+  title     = {Learning from Unlabelled Videos Using Contrastive Predictive Neural 3D Mapping},
+  booktitle = {ICLR},
+  year      = {2019}
+}

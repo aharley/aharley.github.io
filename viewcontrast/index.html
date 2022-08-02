@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning from Unlabelled Videos Using Contrastive Predictive Neural 3D Mapping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
+      <!-- .cite { background:#f0f0f0; padding:10px; font-size:18px} -->
+      .cite { padding:0px; background:#ffffff; font-size:18px}
+      .card {border: 1px solid #ccc}
+      img { margin-bottom:-6px;}
+      p { font-size:18px;}
+      a {text-decoration: none; color: #2196F3;}
+      .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+      box-shadow:
+      0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+      5px 5px 0 0px #fff, /* The second layer */
+      5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+      10px 10px 0 0px #fff, /* The third layer */
+      10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+      15px 15px 0 0px #fff, /* The fourth layer */
+      15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+      20px 20px 0 0px #fff, /* The fifth layer */
+      20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+      25px 25px 0 0px #fff, /* The fifth layer */
+      25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+      margin-left: 10px;
+      margin-right: 60px;
+      }
+    </style>
+  </head>  
+  <body class="w3-white">
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top w3-margin-bottom" style="max-width:1000px;">
+
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+
+	<!-- paper container -->	  
+	<div class="w3-display-container w3-row w3-white w3-margin-bottom">
+	  <div class="w3-center">
+	    <h1>Learning from Unlabelled Videos Using Contrastive Predictive Neural 3D Mapping</h1>
+	    <h5><a href="https://adamharley.com/">Adam W. Harley</a> &emsp;&emsp; <a href="https://www.ri.cmu.edu/ri-people/fangyu-li/">Fangyu Li</a> &emsp;&emsp; Shrinidhi K. Lakshmikanth</h5>
+	    <h5>Xian Zhou &emsp;&emsp; <a href="https://sfish0101.bitbucket.io/">Hsiao-Yu Fish Tung</a> &emsp;&emsp; <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></h5>
+	    <!-- <p><a href="https://arxiv.org/abs/1906.03764">[ Paper ]</a>&emsp;&emsp; [ Code coming soon ]</p> -->
+	  </div>
+	  <hr>
+
+
+	  <!-- <div class="w3-center"> -->
+	  <!--   <h2>Visualization of 3D features</h2> -->
+	  <!-- </div> -->
+	  <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+	    <img src="images/feats.gif" style="width:60%">
+	  </div>
+	  <!-- <p><strong>Bottom</strong>: input video. <strong>Top</strong>: "bird's eye view" visualization of the features learned by our model. On each frame, the model "imagines" the full scene (including areas it cannot observe), in 3D feature maps. The visualization is produced by compressing the features with PCA, and taking a mean along the vertical axis of the map.</p> -->
+	  <hr>
+	  
+	  
+	  <div class="w3-center">
+	    <h2>Abstract</h2>
+	  </div>
+	  <p>Predictive coding theories suggest that the brain learns by predicting observations at various levels of abstraction. One of the most basic prediction tasks is view prediction: how would a given scene look from an alternative viewpoint? Humans excel at this task. Our ability to imagine and fill in missing information is tightly coupled with perception: we feel as if we see the world in 3 dimensions, while in fact, information from only the front surface of the world hits our retinas. This paper explores the role of view prediction in the development of 3D visual recognition. We propose neural 3D mapping networks, which take as input 2.5D (color and depth) video streams captured by a moving camera, and lift them to stable 3D feature maps of the scene, by disentangling the scene content from the motion of the camera. The model also projects its 3D feature maps to novel viewpoints, to predict and match against target views. We propose contrastive prediction losses to replace the standard color regression loss, and show that this leads to better performance on complex photorealistic data. We show that the proposed model learns visual representations useful for (1) semi-supervised learning of 3D object detectors, and (2) unsupervised learning of 3D moving object detectors, by estimating the motion of the inferred 3D feature maps in videos of dynamic scenes. To the best of our knowledge, this is the first work that empirically shows view prediction to be a scalable self-supervised task beneficial to 3D object detection.</p>
+	  <hr>
+
+
+	  <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+	    <img src="images/fig1.png" style="width:80%">
+	  </div>
+	  <p><strong>Contrastive predictive neural 3D mapping.</strong> <em>Left</em>: Learning visual feature representations by moving in static scenes. The neural 3D mapper learns to lift 2.5D video streams to
+	  egomotion-stabilized 3D feature maps of the scene by optimizing for view-contrastive prediction.
+	  <em>Right</em>: Learning to segment 3D moving objects by watching them move. Non-zero 3D motion in the
+	  egomotion-stabilized 3D feature space reveals independently moving objects and their 3D extent,
+	  without any human annotations.
+	  <hr>
+
+
+	  <!-- <div class="w3-display-container w3-row w3-white w3-margin-bottom"> -->
+	  <!--   <div class="w3-center"> -->
+	  <!--     <h3>Paper</h3> -->
+	  <!--   </div> -->
+	  <!--   <\!-- <div class="w3-display-container w3-col s3 m3 l3"> -\-> -->
+	  <!--   <\!--   <div class="w3-display-container" style="margin-bottom:3em"> -\-> -->
+	  <!--   <\!-- 	<a href="https://arxiv.org/pdf/1903.07593.pdf"><img class="layered-paper-big" style="width:75%" src="page1.png"/></a> -\-> -->
+	  <!--   <\!--   </div> -\-> -->
+	  <!--   <\!--   <\\!-- <div class="w3-display-container w3-card-4" style="margin-right:3em"> -\\-> -\-> -->
+	  <!--   <\!--   <\\!-- 	<a href="https://arxiv.org/pdf/1708.04607.pdf"><img src="images/paper.png" style="width:100%"></a> -\\-> -\-> -->
+	  <!--   <\!--   <\\!-- </div> -\\-> -\-> -->
+	  <!--   <\!-- </div> -\-> -->
+	    
+
+	  <!--   <div class="w3-display-container w3-card-4" style="margin-right:3em"> -->
+	  <!--     <a href="https://github.com/aharley/segaware"><img src="page1.png" style="width:100%"></a> -->
+	  <!--     <div class="w3-display-middle w3-large"><a href="https://github.com/aharley/segaware" style="text-decoration:none; color: #fff">GitHub</a></div> -->
+	  <!--   </div> -->
+
+	  <!--   <div class="w3-display-container w3-col s9 m9 l9"> -->
+	  <!--     <p class="cite"> -->
+	  <!-- 	Adam W. Harley, Fangyu Li, Shrinidhi K. Lakshmikanth, Xian Zhou, Hsiao-Yu Fish Tung, Katerina Fragkiadaki.</br> -->
+	  <!-- 	<i>Embodied View-Contrastive 3D Feature Learning.</i></br> -->
+	  <!-- 	arXiv (preprint), 2019. -->
+	  <!--     </p> -->
+	  <!--     <\!-- <div class="w3-display-container w3-card-4" style="margin-right:3em"> -\-> -->
+	  <!--     <\!-- 	<a href="https://github.com/aharley/segaware"><img src="images/code.png" style="width:100%"></a> -\-> -->
+	  <!--     <\!-- 	<div class="w3-display-middle w3-large"><a href="https://github.com/aharley/segaware" style="text-decoration:none; color: #fff">GitHub</a></div> -\-> -->
+	  <!--     <\!-- </div> -\-> -->
+
+	  <!--     <\!-- <div class="cite"> -\-> -->
+	  <!--     <\!-- 	Adam W. Harley, Fangyu Li, Shrinidhi K. Lakshmikanth, Xian Zhou, Hsiao-Yu Fish Tung, Katerina Fragkiadaki. -\-> -->
+	  <!--     <\!-- 	<\\!-- Harley, A. W., Derpanis, K, G., Kokkinos, I. (2017). <em>Segmentation-Aware Convolutional Networks Using Local Attention Masks</em>, in IEEE International Conference on Computer Vision (ICCV), 2017. -\\-> -\-> -->
+	  <!--     <\!-- </div> -\-> -->
+	  <!--     <h3><a href="bib.txt">[bibtex]</a></h3> -->
+	      
+	  <!--   </div> -->
+	  <!-- </div> -->
+	    
+	  <!-- <h3>Citation <a href="bib.txt">[bibtex]</a></h3> -->
+	  <!-- <div class="cite"> -->
+	  <!--   Harley, A. W., Derpanis, K, G., Kokkinos, I. (2017). <em>Segmentation-Aware Convolutional Networks Using Local Attention Masks</em>, in IEEE International Conference on Computer Vision (ICCV), 2017. -->
+	  <!-- </div> -->
+
+	  <div class="w3-row w3-margin" style="padding-bottom:2em">
+	    <div class="w3-center"><h2>Paper</h2></div>
+	    <div class="w3-col s0 m1 l2" style="height:10px"></div>
+	    <div class="w3-col s6 m3 l2">
+	      <a href="https://arxiv.org/abs/1906.03764"><img class="layered-paper-big" src="images/page1.png" style="width:100%;min-height:200px; margin-right:3em"></a>
+	    </div>
+	    <div class="w3-col s6 m7 l6" style="padding-left:5em">
+	      <div class="cite">
+	      	Adam W. Harley, Fangyu Li, Shrinidhi K. Lakshmikanth, Xian Zhou, Hsiao-Yu Fish Tung, Katerina Fragkiadaki.
+		<i>Learning from Unlabelled Videos Using Contrastive Predictive Neural 3D Mapping.</i> 
+		ICLR, 2020. 
+	      </div>
+	      <h3><a href="https://arxiv.org/abs/1906.03764">[pdf]</a>&emsp;<a href="bib.txt">[bibtex]</a></h3>
+	    </div>
+	    <div class="w3-col s0 m1 l2" style="height:10px"></div>
+	  </div>
+	  <hr>
+	  
+	  <!-- end paper container -->
+
+	</div><!-- End Grid -->
+      </div><!-- End Page Container -->
+
+  </body>
+</html>
