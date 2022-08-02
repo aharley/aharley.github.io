@@ -1,0 +1,7 @@
+@inproceedings{harley2015icdar,
+  title = {Evaluation of Deep Convolutional Nets for Document Image Classification and Retrieval},
+  author = {Adam W Harley and Alex Ufkes and Konstantinos G Derpanis},
+  booktitle = {International Conference on Document Analysis and Recognition ({ICDAR})}},
+  year = {2015}
+}
+		
