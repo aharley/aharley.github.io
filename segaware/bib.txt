@@ -1,0 +1,6 @@
+@inproceedings{harley_segaware,
+  title = {Segmentation-Aware Convolutional Networks Using Local Attention Masks},
+  author = {Adam W Harley, Konstantinos G. Derpanis, Iasonas Kokkinos},
+  booktitle = {IEEE International Conference on Computer Vision (ICCV)},
+  year = {2017},
+}

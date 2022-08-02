@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Segmentation-Aware Convolutional Networks Using Local Attention Masks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
+      <!-- .cite { background:#f0f0f0; padding:10px; font-size:18px} -->
+      .cite { padding:0px; background:#ffffff; font-size:18px}
+      .card {border: 1px solid #ccc}
+      img { margin-bottom:-6px;}
+      p { font-size:18px;}
+      a {text-decoration: none; color: #2196F3;}
+      .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+      box-shadow:
+      0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+      5px 5px 0 0px #fff, /* The second layer */
+      5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+      10px 10px 0 0px #fff, /* The third layer */
+      10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+      15px 15px 0 0px #fff, /* The fourth layer */
+      15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+      20px 20px 0 0px #fff, /* The fifth layer */
+      20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+      25px 25px 0 0px #fff, /* The fifth layer */
+      25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+      margin-left: 10px;
+      margin-right: 60px;
+      }
+    </style>
+  </head>  
+  <body class="w3-white">
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top w3-margin-bottom" style="max-width:960px;">
+
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+
+	<!-- paper container -->	  
+	<div class="w3-display-container w3-row w3-white w3-margin-bottom">
+	  <div class="w3-center">
+	    <h1>Segmentation-Aware Convolutional Networks Using Local Attention Masks</h1>
+	    <h5><a href="https://adamharley.com/">Adam W. Harley</a>, <a href="https://csprofkgd.github.io/">Konstantinos G. Derpanis</a>, <a href="http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/">Iasonas Kokkinos</a></h5>
+	    <h5><em>ICCV 2017</em></h5>
+	  </div>
+	  <div class="w3-center">
+	    <h3>[<a href="https://github.com/aharley/segaware">Code</a>] &emsp; [<a href="https://arxiv.org/pdf/1708.04607.pdf">Paper</a>]</h3>
+	  </div>
+	  <hr>
+
+	  <div class="w3-display-container w3-row w3-white w3-margin-bottom">
+	    <div class="w3-display-container w3-col s12 m6">
+	      <img src="images/seg.png" style="width:100%">
+	    </div>
+	    <div class="w3-display-container w3-col s12 m6">
+	      <img src="images/flow.png" style="width:100%">
+	    </div>
+	  </div>
+
+	  <hr>
+	  <div class="w3-center">
+	    <h2>Abstract</h2>
+	  </div>
+	  <p>We introduce an approach to integrate segmentation information within a convolutional neural network (CNN). This counter-acts the tendency of CNNs to smooth information across regions and increases their spatial precision. To obtain segmentation information, we set up a CNN to provide an embedding space where region co-membership can be estimated based on Euclidean distance. We use these embeddings to compute a local attention mask relative to every neuron position. We incorporate such masks in CNNs and replace the convolution operation with a "segmentation-aware" variant that allows a neuron to selectively attend to inputs coming from its own region. We call the resulting network a segmentation-aware CNN because it adapts its filters at each image point according to local segmentation cues. We demonstrate the merit of our method on two widely different dense prediction tasks, that involve classification (semantic segmentation) and regression (optical flow). Our results show that in semantic segmentation we can match the performance of DenseCRFs while being faster and simpler, and in optical flow we obtain clearly sharper responses than networks that do not use local attention masks. In both cases, segmentation-aware convolution yields systematic improvements over strong baselines.</p>
+	  <hr>
+
+	  <div class="w3-row w3-margin" style="padding-bottom:2em">
+	    <div class="w3-center"><h2>Paper</h2></div>
+	    <div class="w3-col s0 m1 l2" style="height:10px"></div>
+	    <div class="w3-col s6 m3 l2">
+	      <a href="https://arxiv.org/pdf/1708.04607.pdf"><img class="layered-paper-big" src="images/paper.png" style="width:100%;min-height:200px; margin-right:3em"></a>
+	    </div>
+	    <div class="w3-col s6 m7 l6" style="padding-left:5em">
+	      <div class="cite">
+		Adam W. Harley, Konstantinos G. Derpanis, Iasonas Kokkinos. 
+		<i>Segmentation-Aware Convolutional Networks Using Local Attention Masks.</i> 
+		ICCV 2017.
+	      </div>
+	      <h3><a href="https://arxiv.org/pdf/1708.04607.pdf">[pdf]</a>&emsp;<a href="bib.txt">[bibtex]</a></h3>
+	    </div>
+	    <div class="w3-col s0 m1 l2" style="height:10px"></div>
+	  </div>
+	  <hr>
+	  
+	  <!-- end paper container -->
+
+	</div><!-- End Grid -->
+      </div><!-- End Page Container -->
+
+  </body>
+</html>
