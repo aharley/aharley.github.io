@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/projectPage.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      td,th {
+      background:#f0f0f0;
+      }
+    </style>
+    <title>Evaluation of Deep Convolutional Nets for Document Image Classification and Retrieval</title></head>
+  <body>
+    <div id="container">
+      <div id="page">
+	<div id="pageContent">
+	  <h1>Evaluation of Deep Convolutional Nets for Document Image Classification and Retrieval</h1>
+	  <p><a href="http://cs.cmu.edu/~aharley/">Adam W. Harley</a>, Alex Ufkes, and <a href="http://scs.ryerson.ca/~kosta/">Konstantinos G. Derpanis</a></p>
+	  <p><strong>ICDAR 2015 "Best Student Paper"</strong></p>
+	  <h2>Abstract</h2>
+	  <p>This paper presents a new state-of-the-art for document image classification and retrieval, using features learned by deep convolutional neural networks (CNNs). In object and scene analysis, deep neural nets are capable of learning a hierarchical chain of abstraction from pixel inputs to concise and descriptive representations. The current work explores this capacity in the realm of document analysis, and confirms that this representation strategy is superior to a variety of popular handcrafted alternatives. Extensive experiments show that (i) features extracted from CNNs are robust to compression, (ii) CNNs trained on non-document images transfer well to document analysis tasks, and (iii) enforcing region-specific feature-learning is unnecessary given sufficient training data. This work also makes available a new labelled subset of the IIT-CDIP collection, containing 400,000 document images across 16 categories.</p>				 
+	  <h2>Paper</h2>
+	  <div id="pdf">
+	    <a href="harley_convnet_icdar15.pdf"><img src="images/paper.png" alt="Evaluation of Deep Convolutional Nets for Document Image Classification and Retrieval"></a> 
+	  </div>
+	  <h2>Citation</h2>
+	  <div class="cite">A. W. Harley, A. Ufkes, K. G. Derpanis, "Evaluation of Deep Convolutional Nets for Document Image Classification and Retrieval," in ICDAR, 2015</div>
+	  <p>Bibtex format:</p>
+	  <div class="cite">
+	    <code>
+	      @inproceedings{harley2015icdar,<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;title = {Evaluation of Deep Convolutional Nets for Document Image Classification and Retrieval},<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;author = {Adam W Harley and Alex Ufkes and Konstantinos G Derpanis},<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;booktitle = {International Conference on Document Analysis and Recognition ({ICDAR})}},<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;year = {2015}<br/>
+	      }
+	    </code>
+	  </div>
+	  <h2>Dataset</h2>
+	  <p>This paper introduced the <a href="../rvl-cdip/">RVL-CDIP</a> dataset.</p>
+	  <h2>Caffe models and setup files</h2>
+	  <p>Here are all of the files related to the "holistic CNN" featured in the paper (fine-tuned from ImageNet on RVL-CDIP).</p>
+	  <table width="100%">
+	    <tr>
+	      <th>File</th>
+	      <th>Size</th>
+	      <th>md5sum</th>				
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYTGI5YnpqTnJ2N2s&export=download">create_docnet.sh</a></td>
+	      <td>71 B</td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYWmZBTTkyRklnQ0U&export=download">make_docnet_mean.sh</a></td>
+	      <td>126 B</td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYNEUtVGVTVXY2Snc&export=download">docnet_mean.binaryproto</a></td>
+	      <td>618362 B (604 KB)</td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYVUhYRXZxOF9adjA&export=download">train_docnet.sh</a></td>
+	      <td>162 B</td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYUFdFRGpBYzdwbVU&export=download">test_docnet.sh</a></td>
+	      <td>245 B</td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYSHhJZEJvY1l5ZE0&export=download">docnet_train_val.prototxt</a></td>
+	      <td>4973 B (4.9 KB)</td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYRjBNc0U0VS0xTVk&export=download">docnet_test.prototxt</a></td>
+	      <td>4974 B (4.9 KB)</td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYenpGc0w0Rk95ekk&export=download">docnet_solver.prototxt</a></td>
+	      <td>749 B</td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYd01Yc0tKNkU2MWs&export=download">caffe_reference_imagenet_model</a></td>
+	      <td>243862418 B (233 MB)</td>
+	      <td>af678f0bd3cdd2437e35679d88665170</td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYRnlkOWJjM1hMZlk&export=download">docnet_train_iter_50000.caffemodel</a></td>
+	      <td>227736621 B (218 MB)</td>
+	      <td>9c96dac588b7b35447c099cec1a08e4d</td>
+	    </tr>
+	  </table>
+	  <p>Here are the Caffe models for the region-trained CNNs. The setup files for these CNNs are nearly identical to those used for the holistic CNN.</p></p>
+	  <table width="100%">
+	    <tr>
+	      <th>File</th>
+	      <th>Size</th>
+	      <th>md5sum</th>				
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYZDVDSnBERFMtZDA&export=download">header.caffemodel</a></td>
+	      <td>227736621 B (218 MB)</td>
+	      <td>e3844e41c9816270727517c72ef37f33</td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYQXBCbktkNnR6NGs&export=download">bodyLeft.caffemodel</a></td>
+	      <td>227736621 B (218 MB)</td>
+	      <td>84237765cbc994df6f3007d72328daf3</td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYcGl2U09hOUJNZ2s&export=download">bodyRight.caffemodel</a></td>
+	      <td>227736621 B (218 MB)</td>
+	      <td>83b51bb09efab1552471e00145b678be</td>
+	    </tr>
+	    <tr>
+	      <td><a href="https://docs.google.com/uc?id=0B0NKIRwUL9KYUkJtRVp1bVJfY0k&export=download">footer.caffemodel</a></td>
+	      <td>227736621 B (218 MB)</td>
+	      <td>6511b69549eee9d6dee84b444b40639d</td>
+	    </tr>
+	  </table>
+	  <h2>Acknowledgements</h2>
+	  This work was supported by NSERC Discovery and Engage grants (held by K.G.D.), and an NSERC USRA (awarded to A.W.H.). The authors thank Palomino System Innovations Inc. for posing the problem and providing data with helpful discussions. The authors gratefully acknowledge the support of NVIDIA Corporation with the donation of a Tesla K40 GPU used for this research.
+	</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61302010-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</html>
