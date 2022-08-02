@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/projectPage.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <title>Learning Dense Convolutional Embeddings for Semantic Segmentation</title></head>
+  <body>
+    <div id="container">
+      <div id="page">
+	<div id="pageContent">
+	  <h1>Learning Dense Convolutional Embeddings for Semantic Segmentation</h1>
+	  <p><a href="http://adamharley.com/">Adam W. Harley</a>, <a href="https://csprofkgd.github.io/">Konstantinos G. Derpanis</a>, and <a href="http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/">Iasonas Kokkinos</a>.</p>
+	  <h2>Abstract</h2>
+	  <p>This paper proposes a new deep convolutional neural network (DCNN) architecture that learns pixel embeddings, such that pairwise distances between the embeddings can be used to infer semantic similarity of the underlying regions. That is, for any two pixels on the same object, the embeddings are trained to be similar; for any pair that straddles an object boundary, the embeddings are trained to be dissimilar. Experimental results show that when this embedding network is used in conjunction with a DCNN trained on semantic segmentation, there is a systematic improvement in per-pixel classification accuracy. This strategy is implemented efficiently as a set of layers in the popular Caffe deep learning framework, making its integration with existing systems very straightforward.</p>
+	  <h2>Paper</h2>
+	  <div id="pdf">
+	    <a href="https://openreview.net/pdf?id=mO9mx9y48ij1gPZ3UlOk"><img src="images/paper.png" alt="Learning Dense Convolutional Embeddings for Semantic Segmentation"></a>
+	  </div>
+	  <h2>Citation</h2>
+	  <div class="cite">Harley, A. W., Derpanis, K. G., Kokkinos, I. (2016). <em>Learning Dense Convolutional Embeddings for Semantic Segmentation</em>. International Conference on Learning Representations (Workshop track).</div>
+	  <p>Bibtex format:</p>
+	  <div class="cite">
+	    <code>
+	      @inproceedings{harley2016iclr,<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;title = {Learning Dense Convolutional Embeddings for Semantic Segmentation},<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;author = {Adam W Harley and Konstantinos G Derpanis and Iasonas Kokkinos},<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;booktitle = {{International Conference on Learning Representations (ICLR)}},<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;year = {2016}<br/>
+	      }
+	    </code>
+	  </div>
+	  <h2>Code</h2>
+	  <p>See our follow-up work, <a href="../segaware">Segmentation-Aware Convolutional Networks with Local Attention Masks</a>!</p>
+	</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61302010-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</html>
