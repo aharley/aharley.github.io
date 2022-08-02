@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/projectPage.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <title>Segmentation-Aware Convolutional Nets</title></head>
+  <body>
+    <div id="container">
+      <div id="page">
+	<div id="pageContent">
+	  <h1>Segmentation-Aware Convolutional Nets</h1>
+	  <p><a href="http://adamharley.com/">Adam W. Harley</a></p>
+	  <div class="feature">
+	    <img src="images/fig1_11_v9_flat.png" alt="Segmentation-Aware Convolutional Nets" style="width:100%; max-width:1346px; padding-top: 1em">
+	  </div>	  
+	  <!--
+	  <img src="images/boat3_flat3_flat.png" style="width:100%; height:auto; max-width:691px;">
+	  -->
+	  <!--<img src="images/boat3_flat2.png" style="width:100%; height:auto; max-width:691px;">-->
+	  <!--<img src="images/fig1_11_v9_flat.png" style="width:100%; height:auto; max-width:1346px;">-->
+	  <h2>Abstract</h2>
+	  <p>This thesis introduces a method to both obtain segmentation information and integrate it uniformly within a convolutional neural network (CNN). This counter-acts the tendency of CNNs to produce smooth predictions, which is undesirable for pixel-wise prediction tasks, such as semantic segmentation. The segmentation information is obtained by a form of metric learning, where a CNN learns to compute pixel embeddings that reflect whether any pair of pixels is likely to belong to the same region. This information is then used within a larger network, to replace all convolutions with foreground-focused convolutions, where the foreground is determined adaptively at each image point by local embeddings. The resulting network is called a segmentation-aware CNN, because the network can change its behaviour at each image location according to local segmentation cues. The proposed method yields systematic improvements on a standard semantic segmentation benchmark when compared to a strong baseline.</p>
+	  <h2>Document</h2>
+	  <div id="pdf">
+	    <a href="harley_msc_thesis.pdf"><img src="images/paper.png" alt="Segmentation-Aware Convolutional Nets"></a>
+	  </div>
+	  <h2>Citation</h2>
+	  <div class="cite">Harley, A. W. (2016). <em>Segmentation-Aware Convolutional Nets</em> (Master's thesis). Ryerson University, Toronto, Ontario.</div>
+	  <p>Bibtex format:</p>
+	  <div class="cite">
+	    <code>
+	      @mastersthesis{harleyMScThesis,<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;title = {Segmentation-Aware Convolutional Nets},<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;author = {Adam W Harley},<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;school = {Ryerson University},<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;address = {Toronto, Ontario},<br/>
+	      &nbsp;&nbsp;&nbsp;&nbsp;year = {2016}<br/>
+	      }
+	    </code>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61302010-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</html>

@@ -1,0 +1,8 @@
+@mastersthesis{harleyMScThesis,
+  title = {Segmentation-Aware Convolutional Nets},
+  author = {Adam W Harley},
+  school = {Ryerson University},
+  address = {Toronto, Ontario},
+  year = {2016}
+}
+		    
