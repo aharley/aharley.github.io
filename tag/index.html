@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61302010-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61302010-1');
+    </script>
+    <title>TAG: Tracking at Any Granularity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
+      <!-- .cite { background:#f0f0f0; padding:10px; font-size:18px} -->
+      .cite { padding:0px; background:#ffffff; font-size:18px}
+      .card {border: 1px solid #ccc}
+      img { margin-bottom:-6px;}
+      p { font-size:18px;}
+      a {text-decoration: none; color: #2196F3;}
+      .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+      box-shadow:
+      0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+      5px 5px 0 0px #fff, /* The second layer */
+      5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+      10px 10px 0 0px #fff, /* The third layer */
+      10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+      15px 15px 0 0px #fff, /* The fourth layer */
+      15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+      20px 20px 0 0px #fff, /* The fifth layer */
+      20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+      25px 25px 0 0px #fff, /* The fifth layer */
+      25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+      margin-left: 10px;
+      margin-right: 60px;
+      }
+    </style>
+    <meta name="google-site-verification" content="8Q_ytX8FqHWcIDBc2IoJAwkJ35JRHclQw494GYdlHBE" />
+  </head>  
+  <body class="w3-white">
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top w3-margin-bottom" style="max-width:960px;">
+
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+
+	<!-- paper container -->	  
+	<div class="w3-display-container w3-row w3-white w3-margin-bottom">
+	  <div class="w3-center">
+	    <h1>TAG: Tracking at Any Granularity</h1>
+	    <h5>
+	      <a href="https://cs.cmu.edu/~aharley/">Adam W. Harley</a>, 
+	      Yang You, Alex Sun, Yang Zheng, Nikhil Raghuraman,
+	      Sheldon Liang, Wen-Hsuan Chu, Suya You, Achal Dave, Pavel Tokmakov,  Rares Ambrus, Katerina Fragkiadaki, Leonidas Guibas</h5>
+	    <!-- <h5><em>ECCV 2022 (Oral)</em></h5> -->
+	  </div>
+	  
+	  <div class="w3-center">
+	    <h3>[<a href="https://github.com/aharley/tag">Code</a>] &emsp; [<a href="./tag_draft.pdf">Paper</a>]</h3>
+	  </div>
+
+	  <hr>
+	  <div class="w3-center">
+	    <!-- <h3>[<a href="https://github.com/aharley/pips">Code</a>] &emsp; [<a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Harley_Track_Check_Repeat_An_EM_Approach_to_Unsupervised_Tracking_CVPR_2021_paper.pdf">Paper</a>]</h3> -->
+	    <!-- <h3>[<a href="https://arxiv.org/abs/2204.04153">Paper</a>] &emsp; [<a href="https://github.com/aharley/pips">Code</a>] &emsp; [<a href="https://blog.ml.cmu.edu/2022/09/09/tracking-any-pixel-in-a-video/">Blog</a>]</h3> -->
+
+	    <video controls style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true" muted="true">
+	      <source src="videos/out.mp4" type="video/mp4">Sorry, your browser doesn't support embedded videos.
+	    </video>
+	    
+	  </div>
+	  
+	  <hr>
+
+	  <div class="w3-center">
+	    <h2>Abstract</h2>
+	  </div>
+	  <p>We introduce  Tracking at Any Granularity (TAG): a new task, model, and dataset for tracking arbitrary targets in videos. We seek a tracking method that treats points, parts, and objects as equally trackable target types, embracing the fact that the distinction between these granularities is ambiguous. We introduce a generic high-capacity transformer for the task, taking as input a video and a target prompt (indicating what to track, in the form of a click, box, or mask), and producing as output the target's segmentation on every frame. To train the model, we aggregate nearly all publicly-available tracking datasets that we are aware of, which currently totals 75,  amounting to millions of clips with tracking annotations, including a long tail of rare subjects such as body keypoints on insects and microscopy data. Our model is competitive with state-of-the-art on standard benchmarks for point tracking, mask tracking, and box tracking, but more importantly, achieves zero-shot performance far superior to prior work, largely thanks to the data effort. We will publicly release our code, model, and aggregated dataset, to provide a foundation model for motion and video understanding, and facilitate future research in this direction.</p>
+	  <hr>
+
+	  
+
+	  <div class="w3-row w3-margin" style="padding-bottom:2em">
+	    <div class="w3-center"><h2>Paper</h2></div>
+	    <div class="w3-col s0 m1 l2" style="height:10px"></div>
+	    <div class="w3-col s6 m3 l2">
+	      <a href="./tag_draft.pdf"><img class="layered-paper-big" src="images/page.png" style="width:100%;min-height:200px; margin-right:3em"></a>
+	    </div>
+	    <div class="w3-col s6 m7 l6" style="padding-left:5em">
+	      <div class="cite">
+		Adam W. Harley, Yang You, Alex Sun, Yang Zheng, Nikhil Raghuraman, Sheldon Liang, Wen-Hsuan Chu, Suya You, Achal Dave, Pavel Tokmakov,  Rares Ambrus, Katerina Fragkiadaki, Leonidas Guibas
+		<i>TAG: Tracking at Any Granularity.</i> 
+		arXiv 2024.
+	      </div>
+	      <h3><a href="./tag_draft.pdf">[pdf]</a>&emsp;<a href="bib.txt">[bibtex]</a></h3>
+	    </div>
+	    <div class="w3-col s0 m1 l2" style="height:10px"></div>
+	  </div>
+	  <hr>
+	  
+	  <!-- end paper container -->
+
+	</div><!-- End Grid -->
+      </div><!-- End Page Container -->
+
+  </body>
+</html>
