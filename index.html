@@ -17,6 +17,7 @@
     <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'> -->
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Sans'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
     <style>
       html,body,p,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
       hr {border-top: 1px solid #ccc}
@@ -35,6 +36,7 @@
       background-color: #000;
       }
       .w3-row-padding{ padding: 0 20px;}
+      .w3-button{padding: 10px 10px; border-radius:0.5rem}
       .margin-top{ margin-top: 50px;}
       .margin-bottom{ margin-bottom: 50px;}
       .head { height:250px;}
@@ -49,10 +51,11 @@
       .padimg { padding-bottom:1em; padding-top: 1em; width: 100%}
       .nopadimg { width: 100%}
       .icon {
-	  float: left;
-	  width: 40px;
-	  height: 40px;
+	  /* float: left; */
+	  /* width: 40px; */
+	  /* height: 40px; */
 	  margin-right: 5px;
+	  color: #fff;
       }
       .email {
 	  /* margin-top: 10px; */
@@ -94,8 +97,11 @@
       li {
           margin: 10px 0;
       }
-    </style>
-      
+      #intro-links {
+	  padding: 10px 10px;
+	  line-height: 1.2em;
+	  text-align:left;
+      }
     </style>
   </head>
 <!-- Google tag (gtag.js) -->
@@ -108,86 +114,74 @@
   gtag('config', 'G-R896CYN8ZS');
 </script>
   <body class="w3-white w3-margin-bottom" style="padding: 0; margins: 0;">
-
     <!-- header -->
-    <div class="bkg w3-content" style="max-width:100%; margin-top:2em;">
+    <!-- <div class="bkg w3-content w3-text-white" style="max-width:100%; padding-top:2em; padding-bottom:1em; background-color: #112233"> -->
+      <div class="bkg w3-content w3-text-white" style="max-width:100%; padding-top:2em; padding-bottom:1em; background-image: linear-gradient(#000, #224455);">
+    <!-- <div class="bkg w3-content w3-white" style="max-width:100%; padding-top:2em; padding-bottom:1em"> -->
       <div class="w3-row-padding w3-content" style="max-width:960px;">
 
-	<div class="w3-row w3-white">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+	<div class="w3-hide-small">
+	  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 	    <tr style="padding:0px">
-	      <td style="padding-right:2.5%;width:75%;vertical-align:middle">
+	      <td style="padding-right:2.5%;width:60%;vertical-align:middle">
 		<h1>Adam Harley</h1>
-		<p>I am a Research Scientist at Meta. I am trying to get computers to understand motion and space.</p>
-		<p>Before Meta, I did a postdoc with <a href="https://geometry.stanford.edu/member/guibas/">Prof. Leonidas Guibas</a> at Stanford University, and a Ph.D. in Robotics at Carnegie Mellon University with <a href="https://www.cs.cmu.edu/~katef/">Prof. Katerina Fragkiadaki</a>. Before that, I did a Master of Science in computer science, with <a href="https://csprofkgd.github.io/">Prof. Kosta Derpanis</a>. Even earlier, I did a Bachelor of Arts in psychology.</p>
-		<div>
-		  <a class="w3-button btn w3-white w3-text-blue w3-border" href="adam_harley_cv.pdf">CV</a>
-		  <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://scholar.google.com/citations?hl=en&user=OB6vAtkAAAAJ">Google Scholar</a> 
-		  <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://twitter.com/AdamWHarley">Twitter</a>
-		  <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley">Github</a>
-		  <a class="w3-button btn w3-white w3-text-blue w3-border" style="cursor: pointer" id="email" title="click to reveal">Email</a>
-		  <span id="email_div" class="email">(hidden)</span> <!-- will reveal email; trick from karpathy's page -->
+		<p>I am a Research Scientist at Meta, working on computer vision and machine learning. I am trying to get computers to understand motion and space.</p>
+		<p>Before Meta, I did a postdoc with <a href="https://geometry.stanford.edu/?member=guibas">Prof. Leonidas Guibas</a> at Stanford University, and a Ph.D. in Robotics at Carnegie Mellon University with <a href="https://www.cs.cmu.edu/~katef/">Prof. Katerina Fragkiadaki</a>. Before that, I did a Master of Science in computer science, with <a href="https://csprofkgd.github.io/">Prof. Kosta Derpanis</a>. Even earlier, I did a Bachelor of Arts in psychology.</p>
+		<div align="center">
+		  <a class="w3-button btn w3-left-align w3-border" href="https://scholar.google.com/citations?hl=en&user=OB6vAtkAAAAJ"><i class="fa fa-graduation-cap icon"></i>Google Scholar</a>
+		  <a class="w3-button btn w3-left-align w3-border" href="https://twitter.com/AdamWHarley"><i class="fab fa-twitter icon"></i>Twitter</a>
+		  <a class="w3-button btn w3-left-align w3-border" href="https://github.com/aharley"><i class="fab fa-github icon"></i>Github</a>
+		  <a class="w3-button btn w3-left-align w3-border" href="adam_harley_cv.pdf"><i class="fab fa fa-address-card icon"></i>CV</a>
 		</div>
-
 	      </td>
 	      <td style="padding-left:2.5%;width:40%;max-width:25%">
-		<img style="width:100%;max-width:100%;border-radius:50%" alt="profile photo" src="images/adam_harley.jpg">
-		<!-- <img style="width:100%;max-width:100%;border-radius:50%" alt="profile photo" src="images/phd.png"> -->
-		<!-- <img style="width:100%;max-width:100%;border-radius:50%" alt="profile photo" src="images/phd2.jpeg"> -->
-		<!-- <img style="width:100%;max-width:100%;border-radius:50%" alt="profile photo" src="images/phd2_big.jpeg"> -->
-		<!-- <img style="width:100%;max-width:100%;border-radius:50%" alt="profile photo" src="https://pbs.twimg.com/profile_images/1290113695096414213/GIL40myQ_400x400.jpg"> -->
-		<!-- <img style="width:100%;max-width:100%;border-radius:50%" alt="profile photo" src="images/msc.png"> -->
+		<img style="width:100%;max-width:100%;border-radius:50%; border: 1px solid white" alt="profile photo" src="images/adam_harley.jpg">
+		<p style="text-align: center"><i class="fa fa-envelope icon"></i>aharley@meta.com</p>
 	      </td>
 	    </tr>
 	  </table>
-	  
-      </div>
-    </div>
+	</div> <!-- hide small -->
 
-    <!-- <div class="w3-row w3-white w3-border w3-content" style="max-width:100%;"> -->
-    <!--   <div class="w3-row-padding w3-content w3-margin-top w3-margin-bottom" style="max-width:960px;"> -->
-    <!-- 	<div class="container w3-text-black w3-large"> -->
-    <!-- 	  <h3>Recent news:</h3> -->
-    <!-- 	  <ul> -->
-    <!-- 	    <li>Two papers accepted to CVPR 2021!</li> -->
-    <!-- 	    <li>One paper accepted to ICLR 2021!</li> -->
-    <!-- 	    <li>I co-organized <a href="http://generativeperception.com/">Perception Through Structured Generative Models</a> at ECCV 2020.</li> -->
-    <!-- 	    <li>I co-organized <a href="http://mindsvsmachines.com/">Minds vs. Machines: How far are we from the common sense of a toddler?</a> at CVPR 2020. Videos of all the talks are now on <a href="https://www.youtube.com/watch?v=55WaJkqifIg&list=PLw-QBnA20Z6_Db2I3bJNpnkaThFJnELWB&index=2">Youtube</a>.</li> -->
-    <!-- 	    <li>I won a "Best Reviewer" award at ICCV 2019.</a> -->
-    <!-- 	    <li>I was awarded an NSERC Postgraduate Scholarship.</a> -->
-    <!-- 	  </ul> -->
-    <!-- 	</div> -->
-    <!--   </div> -->
-    <!-- </div> -->
+	<div class="w3-hide-medium w3-hide-large">
+	  <h1>Adam Harley</h1>
+	  <p>I am a Research Scientist at Meta, working on computer vision and machine learning. I am trying to get computers to understand motion and space.</p>
+	  <p>Before Meta, I did a postdoc with <a href="https://geometry.stanford.edu/?member=guibas">Prof. Leonidas Guibas</a> at Stanford University, and a Ph.D. in Robotics at Carnegie Mellon University with <a href="https://www.cs.cmu.edu/~katef/">Prof. Katerina Fragkiadaki</a>. Before that, I did a Master of Science in computer science, with <a href="https://csprofkgd.github.io/">Prof. Kosta Derpanis</a>. Even earlier, I did a Bachelor of Arts in psychology.</p>
+	  <div align="center">
+	    <a class="w3-button btn w3-left-align w3-border" href="https://scholar.google.com/citations?hl=en&user=OB6vAtkAAAAJ"><i class="fa fa-graduation-cap icon" ></i>Google Scholar</a>
+	    <a class="w3-button btn w3-left-align w3-border" href="https://twitter.com/AdamWHarley"><i class="fab fa-twitter icon"></i>Twitter</a>
+	    <a class="w3-button btn w3-left-align w3-border" href="https://github.com/aharley"><i class="fab fa-github icon"></i>Github</a>
+	    <a class="w3-button btn w3-left-align w3-border" href="adam_harley_cv.pdf"><i class="fab fa fa-address-card icon"></i>CV</a>
+	  </div>
+	  <div style="padding: 10px 20%">
+	    <img style="width:100%;max-width:100%;border-radius:50%; border: 1px solid white" alt="profile photo" src="images/adam_harley.jpg">
+	    <p style="text-align: center"><i class="fa fa-envelope icon"></i>aharley@meta.com</p>
+	  </div>
+	</div> <!-- hide large -->
+
+      </div> <!-- 960 -->
+    </div> <!-- dark bkg -->
+    <!-- end header -->
     
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:960px;">
-
-      <!-- The Grid -->
-      <div class="w3-row-padding">
-	<div class="container w3-text-black w3-large">
-	  <h3>News</h3>
-	</div>
+    <div class="bkg w3-content" style="max-width:100%; margin-top:1em;">
+      <div class="w3-row-padding w3-content" style="max-width:960px;">
+    	
+	<div class="container w3-text-black w3-large"><h3>News</h3></div>
 	<ul>
 	  <li>I will serve as an Area Chair for 3DV 2025, WACV 2025, ICML 2025, and Action Editor for TMLR</li>
-	  <li>I will give a talk at the <a href="https://www.cv4animals.com/">CV4Animals Workshop</a> at CVPR 2024!</li>
-	  <li>I will serve as an Area Chair for NeurIPS 2024.</li>
+	  <li>I gave a talk at the <a href="https://www.cv4animals.com/">CV4Animals Workshop</a> at CVPR 2024!</li>
+	  <li>I served as an Area Chair for NeurIPS 2024.</li>
 	  <li>I gave a talk at the <a href="https://www.vostdataset.org/workshop.html">Workshop on Large-scale Video Object Segmentation</a> at ICCV 2023.</li>
 	  <li>I gave a talk at the <a href="https://www.votchallenge.net/vots2023/program.html">VOTS workshop</a> at ICCV 2023.</li>
-	  <li>I will serve as an Area Chair for WACV 2024.</li>
+	  <li>I served as an Area Chair for WACV 2024.</li>
 	  <li>I gave a talk at the <a href="https://taodataset.org/workshop/cvpr23/index.html">Tracking and Its Many Guises</a> workshop at CVPR 2023.
 	  <li>I gave a talk at the <a href="https://sites.google.com/view/3d-dlad-v5-iv2023/home">3D Deep Learning for Automated Driving</a> workshop at the Intelligent Vehicles Symposium 2023.</li>
 	  <li>I gave a talk at the <a href="https://gidariss.github.io/ssl-on-wheels-eccv2022">Self-Supervision on Wheels</a> tutorial at ECCV 2022.</li>
 	  <li>I co-organized <a href="http://www.generativeperception.com">Perception Through Structured Generative Models</a> at ECCV 2020.</li>
 	  <li>I co-organized <a href="https://www.youtube.com/watch?v=WRokde4btqU&list=PLw-QBnA20Z6_Db2I3bJNpnkaThFJnELWB">Minds vs. Machines: How far are we from the common sense of a toddler?</a> at CVPR 2020.</li>
 	</ul>
-	
-	<div class="container w3-text-black w3-large">
-	  <h3>Publications</h3>
-	</div>
 
-	<!-- paper table -->
-	<!-- <div style="background-color:AliceBlue"> -->
+	<div class="container w3-text-black w3-large"><h3>Publications</h3></div>
+
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
@@ -202,19 +196,13 @@
 		Adam W. Harley,
 		<a href="https://dimadamen.github.io">Dima Damen</a>
 	      </p>
-	      <!-- <div class="w3-button btn w3-white w3-text-gray w3-border">paper coming soon</div> -->
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://ahmaddarkhalil.github.io/EgoPoints/">project page</a>
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2412.04592">paper</a>
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/AhmadDarKhalil/EgoPoints">code</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- </div> -->
-	<!-- end paper table -->
-
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
-	<!-- <div style="background-color:AliceBlue"> -->
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
@@ -238,12 +226,8 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/coltonstearns/dynamic-gaussian-marbles">code</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- </div> -->
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-	<!-- <div style="background-color:AliceBlue"> -->
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
@@ -267,17 +251,12 @@
 		Katerina Fragkiadaki,
 		Leonidas Guibas
 	      </p>
-	      <!-- <div class="w3-button btn w3-white w3-text-gray w3-border">paper coming soon</div> -->
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="./tag/index.html">project page</a>
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="./tag/tag_draft.pdf">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- </div> -->
-	<!-- end paper table -->
-
-	<!-- paper table -->
-	<!-- <div style="background-color:AliceBlue"> -->
+	</table> <!-- end paper table -->
+	
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
@@ -292,17 +271,12 @@
 		<a href="https://coltonstearns.github.io/">Colton Stearns</a>,
 		<a href="https://geometry.stanford.edu/member/guibas/">Leonidas Guibas</a>,
 	      </p>
-	      <!-- <div class="w3-button btn w3-white w3-text-gray w3-border">paper coming soon</div> -->
 	      <!-- <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://www.cis.upenn.edu/~leijh/projects/mosca/">project page</a> -->
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2405.19678">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- </div> -->
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-	<!-- <div style="background-color:AliceBlue"> -->
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
@@ -319,17 +293,12 @@
 		<a href="https://geometry.stanford.edu/member/guibas/">Leonidas Guibas</a>,
 		<a href="https://www.cis.upenn.edu/~kostas">Kostas Daniilidis</a>
 	      </p>
-	      <!-- <div class="w3-button btn w3-white w3-text-gray w3-border">paper coming soon</div> -->
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://www.cis.upenn.edu/~leijh/projects/mosca/">project page</a>
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2405.17421">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- </div> -->
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-	<!-- <div style="background-color:AliceBlue"> -->
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
@@ -345,17 +314,12 @@
 		<a href="https://yzhu.io/">Yixin Zhu</a>, 
 		<a href="https://geometry.stanford.edu/member/guibas/">Leonidas Guibas</a>
 	      </p>
-	      <!-- <div class="w3-button btn w3-white w3-text-gray w3-border">paper coming soon</div> -->
 	      <!-- <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://odin-seg.github.io/">project page</a> -->
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2403.12038">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- </div> -->
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-	<!-- <div style="background-color:AliceBlue"> -->
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
@@ -374,18 +338,12 @@
 		  <a href="https://scholar.google.com/citations?hl=en&user=CXlp-fcAAAAJ">Vishrav Chaudhary</a>,
 		  <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>
 	      </p>
-	      <!-- <div class="w3-button btn w3-white w3-text-gray w3-border">paper coming soon</div> -->
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://odin-seg.github.io/">project page</a>
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2401.02416">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- </div> -->
-	<!-- end paper table -->
-
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
-	<!-- <div style="background-color:AliceBlue"> -->
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
@@ -400,16 +358,11 @@
 		Adam W. Harley,
 		<a href="https://www.sci.muni.cz/zoolecol/inverteb/?teams=mgr-igor-malenovsky-ph-d">Igor Malenovsky</a>
 	      </p>
-	      <!-- <div class="w3-button btn w3-white w3-text-gray w3-border">paper coming soon</div> -->
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://onlinelibrary.wiley.com/doi/10.1111/1744-7917.13322">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- </div> -->
-	<!-- end paper table -->
-
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
@@ -428,10 +381,8 @@
 	      <div class="w3-button btn w3-white w3-text-gray w3-border">code coming soon</div>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
         <table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage">
@@ -456,11 +407,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/qq456cvb/PACE">code/data</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage">
 	      <img src="images/ovtracktor.gif" class="nopadimg">
@@ -480,11 +429,9 @@
 	      <div class="w3-button btn w3-white w3-text-gray w3-border">code coming soon</div>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage">
 	      <img src="./images/hoi_eg.jpg" class="nopadimg">
@@ -501,11 +448,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/nraghuraman/bongard-context">code</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/odyssey_inf.gif" class="nopadimg">
@@ -525,11 +470,10 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley/pips2">model code</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
+	
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/bev_gif.gif" class="nopadimg">
@@ -548,11 +492,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley/simple_bev">code</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/tidee.gif" class="nopadimg">
@@ -575,11 +517,9 @@
 	      <a class="w3-button btn w3-white w3-text-orange w3-border" href="https://blog.ml.cmu.edu/2023/04/14/tidee-an-embodied-agent-that-tidies-up-novel-rooms-using-commonsense-priors/">blog</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/horse_square.gif" class="nopadimg">
@@ -594,11 +534,9 @@
 	      <a class="w3-button btn w3-white w3-text-orange w3-border" href="https://blog.ml.cmu.edu/2022/09/09/tracking-any-pixel-in-a-video/">blog</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/em_loop.gif" class="nopadimg">
@@ -612,11 +550,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley/track_check_repeat">code</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/coco_arch.png" class="nopadimg">
@@ -630,11 +566,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/shamitlal/CoCoNets">code</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/move_loop.gif" class="nopadimg">
@@ -648,11 +582,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/ayushjain1144/SeeingByMoving">code</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/disen_loop.gif" class="nopadimg">
@@ -665,11 +597,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://openreview.net/forum?id=-Lr-u0b42he">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/trackingemerges.gif" class="nopadimg">
@@ -682,11 +612,9 @@
 	      <a class="w3-button btn w3-white w3-text-orange w3-border" href="https://www.rsipvision.com/ECCV2020-Monday/12/">ECCV Daily interview</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/3dq_loop.gif" class="nopadimg">
@@ -700,11 +628,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w26/Prabhudesai_3DQ-Nets_Visual_Concepts_Emerge_in_Pose_Equivariant_3D_Quantized_Neural_CVPRW_2020_paper.pdf">workshop paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/emblang_panel.png" class="nopadimg">
@@ -717,11 +643,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1910.01210">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/feats.gif" class="nopadimg">
@@ -734,11 +658,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1906.03764">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/sigg2.png" class="nopadimg">
@@ -751,11 +673,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://research.fb.com/wp-content/uploads/2019/06/VR-Facial-Animation-via-Multiview-Image-Translation.pdf">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/uncoop.png" class="nopadimg">
@@ -767,12 +687,10 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1901.03628">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 	
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/narr.png" class="nopadimg">
@@ -784,11 +702,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1804.10692">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/cow.png" class="nopadimg">
@@ -800,11 +716,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1705.11166">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/bike.png" class="nopadimg">
@@ -818,11 +732,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley/segaware">code</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/unsupervised_flow.png" class="nopadimg">
@@ -835,11 +747,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1608.05842">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/boats.png" class="nopadimg">
@@ -852,11 +762,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="msc/harley_msc_thesis.pdf">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/cats.png" class="nopadimg">
@@ -869,11 +777,9 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/1511.04377">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/map10.png" class="nopadimg">
@@ -888,11 +794,9 @@
 	      <a class="w3-button btn w3-white w3-text-orange w3-border" href="https://huggingface.co/datasets/rvl_cdip">HuggingFace integration</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <!-- <img src="images/vis_preview4.png" class="nopadimg"> -->
@@ -907,11 +811,9 @@
 	      <a class="w3-button btn w3-white w3-text-orange w3-border" href="http://www.popsci.com/gaze-inside-mind-artificial-intelligence">PopSci article</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
+	</table> <!-- end paper table -->
 	
-	<!-- paper table -->
-        <table class="papertable"> 
+	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <img src="images/stimuli.png" class="nopadimg">
@@ -923,24 +825,10 @@
 	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="misc/HARLEYthesis2012.pdf">paper</a>
 	    </td>
 	  </tr>
-	</table>
-	<!-- end paper table -->
-
-	<hr>
-      </div>
-    </div>
-
+	</table> <!-- end paper table -->
+	
+	<hr />
+      </div> <!-- 960 -->
+    </div> <!-- 100% -->
   </body>
-  <!-- attempt to hide email from spambots; got from karpathy -->
-  <script type="text/javascript">
-    var e_is_shown = false;
-    console.log(e_is_shown)
-    document.getElementById('email').addEventListener("click", function(){
-  	let demail = document.getElementById('email_div');
-  	demail.innerHTML = 'aharley@meta.com';
-  	demail.style.opacity = e_is_shown ? 0 : 1;
-  	e_is_shown = !e_is_shown;
-    })
-    console.log(e_is_shown)
-  </script>
 </html>
