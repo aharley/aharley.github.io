@@ -104,6 +104,24 @@
       li {
           margin: 10px 0;
       }
+      .news-current {
+	  margin-bottom: 4px;
+      }
+      .older-news {
+	  margin-bottom: 20px;
+      }
+      .older-news summary {
+	  color: #2196f3;
+	  cursor: pointer;
+	  width: fit-content;
+      }
+      .older-news summary:hover,
+      .older-news summary:focus {
+	  text-decoration: underline;
+      }
+      .older-news ul {
+	  margin-bottom: 0;
+      }
       #intro-links {
 	  padding: 10px 10px;
 	  line-height: 1.2em;
@@ -173,30 +191,83 @@
       <div class="w3-row-padding w3-content" style="max-width:960px;">
     	
 	<div class="container w3-text-black w3-large"><h3>News</h3></div>
-	<ul>
-	  <li>I will be giving a talk at the <a href="https://ilr-workshop.github.io/ECCVW2026/">ILR+G workshop</a> at ECCV 2026!</li>
-	  <li>I am co-organizing a <a href="https://www.votchallenge.net/vots2026/participation.html">point tracking challenge</a> at ECCV 2026!</li>
+	<ul class="news-current">
+	  <li>I gave a talk at the <a href="https://ilr-workshop.github.io/ECCVW2026/">ILR+G workshop</a> at ECCV 2026.</li>
+	  <li>I co-organized a <a href="https://www.votchallenge.net/vots2026/participation.html">point tracking challenge</a> at ECCV 2026.</li>
 	  <li>I am an Area Chair for WACV 2026, ICML 2026, and NeurIPS 2026, and SPC for AAAI 2027, and Action Editor for TMLR.</li>
+	</ul>
+	<details class="older-news">
+	  <summary>Older news</summary>
+	  <ul>
 	  <li>I gave an invited talk at the <a href="https://www.votchallenge.net/vots2025/program.html">VOTS Workshop</a> at ICCV 2025.</li>
-	  <li>I gave invited talks at two CVPR 2025 workshops: <a href="https://4dvisionworkshop.github.io/">4D Vision</a> and <a href="https://sites.google.com/view/pixfoundation">Pixel-Level Vision Foundation Models</a>.
+	  <li>I gave invited talks at two CVPR 2025 workshops: <a href="https://4dvisionworkshop.github.io/">4D Vision</a> and <a href="https://sites.google.com/view/pixfoundation">Pixel-Level Vision Foundation Models</a>.</li>
 	  <li>I served as an Area Chair for 3DV 2025, WACV 2025, ICML 2025, and NeurIPS 2025.</li>
 	  <li>I gave a talk at the <a href="https://www.cv4animals.com/">CV4Animals Workshop</a> at CVPR 2024.</li>
 	  <li>I served as an Area Chair for WACV 2024 and NeurIPS 2024.</li>
 	  <li>I gave a talk at the <a href="https://www.vostdataset.org/workshop.html">Workshop on Large-scale Video Object Segmentation</a> at ICCV 2023.</li>
 	  <li>I gave a talk at the <a href="https://www.votchallenge.net/vots2023/program.html">VOTS workshop</a> at ICCV 2023.</li>
-	  <li>I gave a talk at the <a href="https://taodataset.org/workshop/cvpr23/index.html">Tracking and Its Many Guises</a> workshop at CVPR 2023.
+	  <li>I gave a talk at the <a href="https://taodataset.org/workshop/cvpr23/index.html">Tracking and Its Many Guises</a> workshop at CVPR 2023.</li>
 	  <li>I gave a talk at the <a href="https://sites.google.com/view/3d-dlad-v5-iv2023/home">3D Deep Learning for Automated Driving</a> workshop at the Intelligent Vehicles Symposium 2023.</li>
 	  <li>I gave a talk at the <a href="https://gidariss.github.io/ssl-on-wheels-eccv2022">Self-Supervision on Wheels</a> tutorial at ECCV 2022.</li>
 	  <li>I co-organized <a href="http://www.generativeperception.com">Perception Through Structured Generative Models</a> at ECCV 2020.</li>
 	  <li>I co-organized <a href="https://www.youtube.com/watch?v=WRokde4btqU&list=PLw-QBnA20Z6_Db2I3bJNpnkaThFJnELWB">Minds vs. Machines: How far are we from the common sense of a toddler?</a> at CVPR 2020.</li>
-	</ul>
+	  </ul>
+	</details>
 
 	<div class="container w3-text-black w3-large"><h3>Publications</h3></div>
 
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="E3C: Video Generation with 3D Environmental Memory and Ego-Exo Human Pose Control" style="width:100%;max-width:100%"><source src="images/e3c.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="TrackEverything: Long Horizon Dense Tracking via De-Duplicating 3D Scene Representations" style="width:100%;max-width:100%"><source data-src="images/trackeverything.mp4" type="video/mp4"></video>
+	    </td>
+	    <td class="papertext">
+	      <h5>TrackEverything: Long Horizon Dense Tracking via De-Duplicating 3D Scene Representations</h5>
+	      <p>arXiv 2026</p>
+	      <p>
+		<a href="https://ayushjain1144.github.io/">Ayush Jain</a>,
+		<a href="https://sreeharshaparuchur1.github.io/">Sreeharsha Paruchuri*</a>,
+		<a href="https://gupta-ish.github.io/">Ishita Gupta*</a>,
+		<a href="https://scholar.google.com/citations?user=64vtwkoAAAAJ&amp;hl=en">Fan Zhang</a>,
+		<a href="https://tschmidt23.github.io/">Tanner Schmidt</a>,
+		<a href="https://jakobengel.github.io/">Jakob Engel</a>,
+		<a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>,
+		Adam W. Harley
+	      </p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2609.30222">paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://trackeverything.github.io/">project page</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/ayushjain1144/trackeverything">code</a>
+	    </td>
+	  </tr>
+	</table> <!-- end paper table -->
+
+	<table class="papertable">
+	  <tr style="padding:0px">
+	    <td class="paperimage">
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="PosePAL: Efficient Animal Pose Labeling Using Point Trackers" style="width:100%;max-width:100%"><source data-src="images/animal_pose.mp4" type="video/mp4"></video>
+	    </td>
+	    <td class="papertext">
+	      <h5>PosePAL: Efficient Animal Pose Labeling Using Point Trackers</h5>
+	      <p>IJCV 2026; earlier version at CVPR-W 2025</p>
+	      <p>
+		<a href="https://panzhy.com/">Zhuoyang Pan</a>,
+		<a href="https://cs.stanford.edu/~bxpan/">Boxiao Pan</a>,
+		<a href="https://www.guandaoyang.com/">Guandao Yang</a>,
+		Adam W. Harley,
+		<a href="https://geometry.stanford.edu/?member=guibas">Leonidas Guibas</a>
+	      </p>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://link.springer.com/article/10.1007/s11263-026-02976-z">IJCV paper</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2506.03868">arXiv</a>
+	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://zhuoyang-pan.github.io/animal-labeling">project page</a>
+	      <!-- <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley/alltracker">code</a> -->
+	    </td>
+	  </tr>
+	</table> <!-- end paper table -->
+
+	<table class="papertable">
+	  <tr style="padding:0px">
+	    <td class="paperimage">
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="E3C: Video Generation with 3D Environmental Memory and Ego-Exo Human Pose Control" style="width:100%;max-width:100%"><source data-src="images/e3c.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>E<sup>3</sup>C: Video Generation with 3D Environmental Memory and Ego-Exo Human Pose Control</h5>
@@ -218,7 +289,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="DRoPS: Dynamic 3D Reconstruction of Pre-Scanned Objects" style="width:100%;max-width:100%"><source src="images/drops.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="DRoPS: Dynamic 3D Reconstruction of Pre-Scanned Objects" style="width:100%;max-width:100%"><source data-src="images/drops.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>DRoPS: Dynamic 3D Reconstruction of Pre-Scanned Objects</h5>
@@ -242,7 +313,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="PointSt3R: Point Tracking through 3D Grounded Correspondence" style="width:100%;max-width:100%"><source src="images/pointst3r.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="PointSt3R: Point Tracking through 3D Grounded Correspondence" style="width:100%;max-width:100%"><source data-src="images/pointst3r.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>PointSt3R: Point Tracking through 3D Grounded Correspondence</h5>
@@ -261,7 +332,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Generative Point Tracking with Flow Matching" style="width:100%;max-width:100%"><source src="images/generative.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Generative Point Tracking with Flow Matching" style="width:100%;max-width:100%"><source data-src="images/generative.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>Generative Point Tracking with Flow Matching</h5>
@@ -282,7 +353,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="LookOut: Real-World Humanoid Egocentric Navigation" style="width:100%;max-width:100%"><source src="images/lookout.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="LookOut: Real-World Humanoid Egocentric Navigation" style="width:100%;max-width:100%"><source data-src="images/lookout.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>LookOut: Real-World Humanoid Egocentric Navigation</h5>
@@ -303,7 +374,7 @@
 	  <tr style="padding:0px">
 	    <td class="paperimage">
 		<video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="AllTracker: Efficient Dense Point Tracking at High Resolution" style="width:100%;max-width:100%">
-		  <source src="images/out_35.mp4" type="video/mp4">Sorry, your browser doesn't support embedded videos.
+		  <source data-src="images/out_35.mp4" type="video/mp4">Sorry, your browser doesn't support embedded videos.
 		</video>
 	    </td>
 	    <td class="papertext">
@@ -336,29 +407,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Animal Pose Labeling Using General-Purpose Point Trackers" style="width:100%;max-width:100%"><source src="images/animal_pose.mp4" type="video/mp4"></video>
-	    </td>
-	    <td class="papertext">
-	      <h5>Animal Pose Labeling Using General-Purpose Point Trackers</h5>
-	      <p>CVPR-W 2025</p>
-	      <p>
-		<a href="https://panzhy.com/">Zhuoyang Pan</a>,
-		<a href="https://cs.stanford.edu/~bxpan/">Boxiao Pan</a>,
-		<a href="https://www.guandaoyang.com/">Guandao Yang</a>,
-		Adam W. Harley,
-		<a href="https://geometry.stanford.edu/?member=guibas">Leonidas Guibas</a>
-	      </p>
-	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://arxiv.org/abs/2506.03868">paper</a>
-	      <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://zhuoyang-pan.github.io/animal-labeling">project page</a>
-	      <!-- <a class="w3-button btn w3-white w3-text-blue w3-border" href="https://github.com/aharley/alltracker">code</a> -->
-	    </td>
-	  </tr>
-	</table> <!-- end paper table -->
-	
-	<table class="papertable">
-	  <tr style="padding:0px">
-	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="TAPIP3D: Tracking Any Point in Persistent 3D Geometry" style="width:100%;max-width:100%"><source src="./images/tapip3d_small3.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="TAPIP3D: Tracking Any Point in Persistent 3D Geometry" style="width:100%;max-width:100%"><source data-src="./images/tapip3d_small3.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>TAPIP3D: Tracking Any Point in Persistent 3D Geometry</h5>
@@ -380,7 +429,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Monocular Dynamic Gaussian Splatting is Fast and Brittle but Smooth Motion Helps" style="width:100%;max-width:100%"><source src="./images/dygaubench_opt.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Monocular Dynamic Gaussian Splatting is Fast and Brittle but Smooth Motion Helps" style="width:100%;max-width:100%"><source data-src="./images/dygaubench_opt.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>Monocular Dynamic Gaussian Splatting is Fast and Brittle but Smooth Motion Helps</h5>
@@ -404,7 +453,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="MoSca: Dynamic Gaussian Fusion from Casual Videos via 4D Motion Scaffolds" style="width:100%;max-width:100%"><source src="images/mosca.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="MoSca: Dynamic Gaussian Fusion from Casual Videos via 4D Motion Scaffolds" style="width:100%;max-width:100%"><source data-src="images/mosca.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>MoSca: Dynamic Gaussian Fusion from Casual Videos via 4D Motion Scaffolds</h5>
@@ -427,7 +476,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="EgoPoints: Advancing Point Tracking for Egocentric Videos" style="width:100%;max-width:100%"><source src="./images/egopoints.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="EgoPoints: Advancing Point Tracking for Egocentric Videos" style="width:100%;max-width:100%"><source data-src="./images/egopoints.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>EgoPoints: Advancing Point Tracking for Egocentric Videos</h5>
@@ -448,7 +497,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Dynamic Gaussian Marbles for Novel View Synthesis of Casual Monocular Videos" style="width:100%;max-width:100%"><source src="./images/tiger.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Dynamic Gaussian Marbles for Novel View Synthesis of Casual Monocular Videos" style="width:100%;max-width:100%"><source data-src="./images/tiger.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>Dynamic Gaussian Marbles for Novel View Synthesis of Casual Monocular Videos</h5>
@@ -473,7 +522,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="TAG: Tracking at Any Granularity" style="width:100%;max-width:100%"><source src="./tag/images/tag_zoom.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="TAG: Tracking at Any Granularity" style="width:100%;max-width:100%"><source data-src="./tag/images/tag_zoom.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>TAG: Tracking at Any Granularity</h5>
@@ -567,7 +616,7 @@
 	<table class="papertable">
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Wing buzzing as a mechanism for generating vibrational signals in psyllids (Hemiptera: Psylloidea)" style="width:100%;max-width:100%"><source src="images/psyllid.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Wing buzzing as a mechanism for generating vibrational signals in psyllids (Hemiptera: Psylloidea)" style="width:100%;max-width:100%"><source data-src="images/psyllid.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>Wing buzzing as a mechanism for generating vibrational signals in psyllids (Hemiptera: Psylloidea)</h5>
@@ -632,7 +681,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage">
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Zero-Shot Open-Vocabulary Tracking with Large Pre-Trained Models" style="width:100%;max-width:100%"><source src="images/ovtracktor.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Zero-Shot Open-Vocabulary Tracking with Large Pre-Trained Models" style="width:100%;max-width:100%"><source data-src="images/ovtracktor.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext"> 
 	      <h5>Zero-Shot Open-Vocabulary Tracking with Large Pre-Trained Models</h5>
@@ -673,7 +722,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="PointOdyssey: A Large-Scale Synthetic Dataset for Long-Term Point Tracking" style="width:100%;max-width:100%"><source src="images/odyssey_inf.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="PointOdyssey: A Large-Scale Synthetic Dataset for Long-Term Point Tracking" style="width:100%;max-width:100%"><source data-src="images/odyssey_inf.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext"> 
 	      <h5>PointOdyssey: A Large-Scale Synthetic Dataset for Long-Term Point Tracking</h5>
@@ -696,7 +745,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Simple-BEV: What Really Matters for Multi-Sensor BEV Perception?" style="width:100%;max-width:100%"><source src="images/bev_gif.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Simple-BEV: What Really Matters for Multi-Sensor BEV Perception?" style="width:100%;max-width:100%"><source data-src="images/bev_gif.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext"> 
 	      <h5>Simple-BEV: What Really Matters for Multi-Sensor BEV Perception?</h5>
@@ -717,7 +766,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="TIDEE: Tidying Up Novel Rooms using Visuo-Semantic Commonsense Priors" style="width:100%;max-width:100%"><source src="images/tidee.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="TIDEE: Tidying Up Novel Rooms using Visuo-Semantic Commonsense Priors" style="width:100%;max-width:100%"><source data-src="images/tidee.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext"> 
 	      <h5>TIDEE: Tidying Up Novel Rooms using Visuo-Semantic Commonsense Priors</h5>
@@ -742,7 +791,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Particle Video Revisited: Tracking Through Occlusions Using Point Trajectories" style="width:100%;max-width:100%"><source src="images/horse_square.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Particle Video Revisited: Tracking Through Occlusions Using Point Trajectories" style="width:100%;max-width:100%"><source data-src="images/horse_square.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext"> 
 	      <h5>Particle Video Revisited: Tracking Through Occlusions Using Point Trajectories</h5>
@@ -759,7 +808,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Track, Check, Repeat: An EM Approach to Unsupervised Tracking" style="width:100%;max-width:100%"><source src="images/em_loop.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Track, Check, Repeat: An EM Approach to Unsupervised Tracking" style="width:100%;max-width:100%"><source data-src="images/em_loop.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext"> 
 	      <h5>Track, Check, Repeat: An EM Approach to Unsupervised Tracking</h5>
@@ -791,7 +840,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Move to See Better: Self-Improving Embodied Object Detection" style="width:100%;max-width:100%"><source src="images/move_loop.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Move to See Better: Self-Improving Embodied Object Detection" style="width:100%;max-width:100%"><source data-src="images/move_loop.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>Move to See Better: Self-Improving Embodied Object Detection</h5>
@@ -807,7 +856,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Disentangling 3D Prototypical Networks For Few-Shot Concept Learning" style="width:100%;max-width:100%"><source src="images/disen_loop.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Disentangling 3D Prototypical Networks For Few-Shot Concept Learning" style="width:100%;max-width:100%"><source data-src="images/disen_loop.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>Disentangling 3D Prototypical Networks For Few-Shot Concept Learning</h5>
@@ -822,7 +871,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Tracking Emerges by Looking Around Static Scenes, with Neural 3D Mapping" style="width:100%;max-width:100%"><source src="images/trackingemerges.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Tracking Emerges by Looking Around Static Scenes, with Neural 3D Mapping" style="width:100%;max-width:100%"><source data-src="images/trackingemerges.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>Tracking Emerges by Looking Around Static Scenes, with Neural 3D Mapping</h5>
@@ -837,7 +886,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="3D Object Recognition By Corresponding and Quantizing Neural 3D Scene Representations" style="width:100%;max-width:100%"><source src="images/3dq_loop.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="3D Object Recognition By Corresponding and Quantizing Neural 3D Scene Representations" style="width:100%;max-width:100%"><source data-src="images/3dq_loop.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>3D Object Recognition By Corresponding and Quantizing Neural 3D Scene Representations</h5>
@@ -868,7 +917,7 @@
 	<table class="papertable"> 
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Learning from Unlabelled Videos Using Contrastive Predictive Neural 3D Mapping" style="width:100%;max-width:100%"><source src="images/feats.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="Learning from Unlabelled Videos Using Contrastive Predictive Neural 3D Mapping" style="width:100%;max-width:100%"><source data-src="images/feats.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>Learning from Unlabelled Videos Using Contrastive Predictive Neural 3D Mapping</h5>
@@ -1021,7 +1070,7 @@
 	  <tr style="padding:0px">
 	    <td class="paperimage"> 
 	      <!-- <img loading="lazy" alt="An Interactive Node-Link Visualization of Convolutional Neural Networks" src="images/vis_preview4.png" class="nopadimg"> -->
-	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="An Interactive Node-Link Visualization of Convolutional Neural Networks" style="width:100%;max-width:100%"><source src="images/vis10.mp4" type="video/mp4"></video>
+	      <video class="nopadimg" autoplay loop muted playsinline preload="none" aria-label="An Interactive Node-Link Visualization of Convolutional Neural Networks" style="width:100%;max-width:100%"><source data-src="images/vis10.mp4" type="video/mp4"></video>
 	    </td>
 	    <td class="papertext">
 	      <h5>An Interactive Node-Link Visualization of Convolutional Neural Networks</h5>
@@ -1051,5 +1100,53 @@
 	<hr />
       </div> <!-- 960 -->
     </div> <!-- 100% -->
+    <script>
+      (function() {
+        var videos = Array.prototype.slice.call(document.querySelectorAll('video'));
+
+        function loadVideo(video) {
+          if (video.dataset.loaded === 'true') {
+            return;
+          }
+
+          var sources = video.querySelectorAll('source[data-src]');
+          for (var i = 0; i < sources.length; i++) {
+            sources[i].src = sources[i].dataset.src;
+          }
+
+          video.dataset.loaded = 'true';
+          video.load();
+        }
+
+        function playVideo(video) {
+          loadVideo(video);
+          var playPromise = video.play();
+          if (playPromise && playPromise.catch) {
+            playPromise.catch(function() {});
+          }
+        }
+
+        if ('IntersectionObserver' in window) {
+          var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                playVideo(entry.target);
+              } else {
+                entry.target.pause();
+              }
+            });
+          }, {
+            rootMargin: '400px 0px',
+            threshold: 0.01
+          });
+
+          videos.forEach(function(video) {
+            observer.observe(video);
+          });
+        } else {
+          videos.forEach(playVideo);
+        }
+      })();
+    </script>
   </body>
 </html>
